@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-const ImagePlugin = require('imagemin-webpack-plugin').default;
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminJpegoptim = require('imagemin-jpegoptim');
 
@@ -52,7 +52,7 @@ module.exports = {
             test: /\.(jpe?g|png|gif|svg)?/,
             plugins: [
                 ImageminJpegoptim({
-                    size: '60%',
+                    size: '2.5%',
                     progressive: true
                 })
             ]
