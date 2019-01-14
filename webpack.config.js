@@ -1,7 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const ImagePlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminJpegoptim = require('imagemin-jpegoptim');
 
 module.exports = {
     mode: 'development',
@@ -42,6 +44,19 @@ module.exports = {
         }),
         new miniCssExtractPlugin({
             filename: 'main.css'
+        }),
+        new CopyWebpackPlugin([
+            { from: './src/images', to: './images' }
+        ]),
+        new ImageminPlugin({
+            test: /\.(jpe?g|png|gif|svg)?/,
+            plugins: [
+                ImageminJpegoptim({
+                    size: '60%',
+                    progressive: true
+                })
+            ]
+
         })
     ]
 }

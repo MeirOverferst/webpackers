@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _greet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./greet */ \"./src/scripts/greet.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconsole.log(Object(_greet__WEBPACK_IMPORTED_MODULE_0__[\"sayHallo\"])('Meir'));\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _greet__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./greet */ \"./src/scripts/greet.js\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconsole.log(Object(_greet__WEBPACK_IMPORTED_MODULE_0__[\"sayHello\"])('Meir'));\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
 
 /***/ }),
 
@@ -102,11 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _gre
 /*!******************************!*\
   !*** ./src/scripts/greet.js ***!
   \******************************/
-/*! exports provided: sayHallo */
+/*! exports provided: sayHello */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sayHallo\", function() { return sayHallo; });\nvar sayHallo = function sayHallo(name) {\n  return name;\n};\n\n//# sourceURL=webpack:///./src/scripts/greet.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sayHello\", function() { return sayHello; });\nvar sayHello = function sayHello(name) {\n  return name;\n};\n\n//# sourceURL=webpack:///./src/scripts/greet.js?");
 
 /***/ }),
 
@@ -115,9 +115,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
   !*** ./src/styles/main.scss ***!
   \******************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\\n\\n@import 'heading';\\n^\\n      File to import not found or unreadable: heading.\\n      in /home/meir/Desktop/webpackers/src/styles/main.scss (line 1, column 1)\\n    at runLoaders (/home/meir/Desktop/webpackers/node_modules/webpack/lib/NormalModule.js:301:20)\\n    at /home/meir/Desktop/webpackers/node_modules/loader-runner/lib/LoaderRunner.js:364:11\\n    at /home/meir/Desktop/webpackers/node_modules/loader-runner/lib/LoaderRunner.js:230:18\\n    at context.callback (/home/meir/Desktop/webpackers/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Object.render [as callback] (/home/meir/Desktop/webpackers/node_modules/sass-loader/lib/loader.js:52:13)\\n    at Object.done [as callback] (/home/meir/Desktop/webpackers/node_modules/neo-async/async.js:8077:18)\\n    at options.error (/home/meir/Desktop/webpackers/node_modules/node-sass/lib/index.js:294:32)\");\n\n//# sourceURL=webpack:///./src/styles/main.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/main.scss?");
 
 /***/ })
 
