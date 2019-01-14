@@ -1,3 +1,3 @@
-import { sayHallo } from './greet';
+import { sayHello } from './greet';
 import '../styles/main.scss';
-console.log(sayHallo('Meir'));
+console.log(sayHello('Meir'));

@@ -1,1 +1,1 @@
-export const sayHallo = name => name;
+export const sayHello = name => name;
