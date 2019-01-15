@@ -8,7 +8,10 @@ const ImageminJpegoptim = require('imagemin-jpegoptim');
 module.exports = {
     mode: 'development',
     entry: './src/scripts/app.js',
-    output: { path: path.resolve(__dirname, 'dist'), filename: 'bundle.js' },
+    output: {
+        path: path.resolve(__dirname, 'dist/scripts'),
+        filename: 'bundle.js'
+    },
     module: {
         rules: [
             {
@@ -17,7 +20,7 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
             },
@@ -25,29 +28,38 @@ module.exports = {
                 test: /\.s?css?/i,
                 use: [
                     {
-                        loader: miniCssExtractPlugin.loader,
-                        options: {
-                            publicPath: '/dist'
-                        }
+                        loader: miniCssExtractPlugin.loader
+
                     },
                     'css-loader',
                     'sass-loader'
                 ]
 
+
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: '../images'
+                        }
+                    }
+                ]
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: 'index.html'
+            filename: '../index.html'
         }),
         new miniCssExtractPlugin({
-            filename: 'main.css'
+            filename: '../styles/main.css'
         }),
-        new CopyWebpackPlugin([
-            { from: './src/images', to: './images' }
-        ]),
+
         new ImageminPlugin({
             test: /\.(jpe?g|png|gif|svg)?/,
             plugins: [
