@@ -52,11 +52,10 @@ module.exports = {
             test: /\.(jpe?g|png|gif|svg)?/,
             plugins: [
                 ImageminJpegoptim({
-                    size: '2.5%',
+                    size: '60%',
                     progressive: true
                 })
             ]
-
         })
     ]
 }
