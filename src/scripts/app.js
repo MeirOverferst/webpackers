@@ -61,7 +61,7 @@ class Menu extends React.Component {
             if (i.quantity > 0) {
                 lessThen.push(i)
             }
-
+            console.log(lessThen);
 
         }
         return <ul>{lessThen.map(item => <li> {item.quantity} times {item.product} </li>)} </ul>;
