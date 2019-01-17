@@ -1,12 +1,33 @@
-.green{
-    color: green;
+
+.navi{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: grey;
+    li{
+        flex-grow: 1;
+        border: 1px solid brown;
+        list-style: none;
+        text-align: center;
+        a{
+            text-decoration: none;
+            
+        }
+    }
 }
-.big{
-    font-size: 5vw;
+
+.section{
+    h3{
+    text-align: center;
+    }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
-.small{
-    font-size: 2.5vw;
+p{
+    text-align: center;
 }
- .tahoma{
-     font-family: tahoma;
- }
+}

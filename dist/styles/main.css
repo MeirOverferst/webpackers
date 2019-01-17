@@ -1,0 +1,25 @@
+.navi {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: grey; }
+  .navi li {
+    flex-grow: 1;
+    border: 1px solid brown;
+    list-style: none;
+    text-align: center; }
+    .navi li a {
+      text-decoration: none; }
+
+.section h3 {
+  text-align: center; }
+
+.section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.section p {
+  text-align: center; }
+
