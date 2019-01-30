@@ -5,18 +5,47 @@ import ReactDOM from 'react-dom';
 // import { NavBar } from './navbar';
 // import { BlogPost } from './blogs';
 // import { PlayerInfo } from './rider';
+// import { ButtonTraining } from './22-1-19button';
+// import { Sayhallo } from './22-1-19welcomeTask';
+// import { Warmup } from './23-1-19theory';
+// import { Sayhallorecompose} from './23-1-19task';
+import { PhotoGallery } from './23-1-19photoGallery';
+// import { ToDoList } from './28-1-19toDoList';
 
 class App extends React.Component {
 
-    handleClick(event){
-        console.log("you clicked the button !");
-        this.refs.myButton.innerText ="button clicked !";
-    }
-    render(){
-        return(
-            <button className = "btn btn-lg btn-primery" onClick={this.handleClick.bind(this)} ref="myButton">Click on me </button> 
+    render() {
+        return (
+            <PhotoGallery />
         )
     }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { isParagraphSeen: false };
+    //     // this.state = { counter: 0 }
+    // }
+
+
+    // handleClick(event) {
+    //     this.setState({ isParagraphSeen: !this.state.isParagraphSeen });
+    //     // this.setState({ counter: this.state.counter + 1 });
+    //     // console.log("you clicked the button !");
+    //     // this.refs.myButton.innerText ="button clicked !";
+    //     // this.refs.miladParagraph.innerText="Milad answered this question!"
+    // }
+
+    // render() {
+    //     return (
+    //         <React.Fragment>
+    //             {/* <button className="btn btn-lg btn-primery" onClick={this.handleClick.bind(this)} ref="myButton">Add a subscriber</button> */}
+    //             <button className="btn btn-lg btn-primary" onClick={this.handleClick.bind(this)}>
+    //                 {this.state.isParagraphSeen ? 'Hide Paragraph' : 'Show Paragraph'}
+    //             </button>
+    //             {this.state.isParagraphSeen && <p className="lead">Now you See Me!</p>}
+    //             {/* {this.state.counter > 0 && <p className="lead" ref="miladParagraph">Officialy we have now {this.state.counter} subscribers</p>} */}
+    //         </React.Fragment>
+    //     )
+    // }
 
     // render() {
 
