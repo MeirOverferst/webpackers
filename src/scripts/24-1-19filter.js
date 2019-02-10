@@ -14,7 +14,6 @@ const fishProducts = [
 
 ];
 
-
 const onlyCorvina = fishProducts.filter(elem => elem.species == "Corvina");
 const luvina = fishProducts.filter(elem => elem.species == "Luvina");
 const tuna = fishProducts.filter(elem => elem.species == "Tuna");

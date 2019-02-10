@@ -11,11 +11,10 @@ export class Warmup extends React.Component {
         this.setState({ usersRegistered: this.state.usersRegistered + 1, showParagraph: true });
         setTimeout(() => {
             this.setState({ showParagraph: false });
-        }, 4000)
+        }, 10000)
     }
 
     render() {
-
         return (
             <React.Fragment>
                 <button className="btn btn-lg btn-primary" onClick={this.handleClick.bind(this)}>
@@ -26,7 +25,6 @@ export class Warmup extends React.Component {
         );
     }
 }
-
 class Paragraph extends React.Component {
 
     render() {

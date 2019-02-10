@@ -1,26 +1,14 @@
-.navi {
-  width: 100%;
-  height: 5vw;
-  display: flex;
-  justify-content: space-around;
-  background: grey; }
-  .navi li {
-    flex-grow: 1;
-    border: 1px solid brown;
-    list-style: none;
-    text-align: center; }
-    .navi li a {
-      text-decoration: none; }
+.fade-enter {
+  opacity: 0; }
 
-.section h3 {
-  text-align: center; }
+.fade-enter-active {
+  opacity: 1;
+  transition: all 2s ease-in; }
 
-.section img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; }
+.fade-exit {
+  opacity: 1; }
 
-.section p {
-  text-align: center; }
+.fade-exit-active {
+  opacity: 0;
+  transition: all 2s ease-out; }
 

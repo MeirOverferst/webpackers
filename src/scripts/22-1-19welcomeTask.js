@@ -12,15 +12,12 @@ export class Sayhallo extends React.Component {
 
     render() {
         return (
-
             <div>
                 <form>
                     <input className="form-control" placeholder="Write you name here!" value={this.state.formValue} onChange={this.handleChange.bind(this)} ></input>
                     <p className="jumbotron display-2 text-success">{this.state.counter === 0 ? "Write something " : `Welcome back , ${this.state.formValue}`} </p>
                 </form>
             </div>
-
-
         )
     }
 }

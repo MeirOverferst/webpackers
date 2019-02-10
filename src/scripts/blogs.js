@@ -28,7 +28,7 @@ export class BlogPost extends React.Component {
         return (
             <div className="card" >
                 <BlogPostData childAuthor={this.props.parentAuthor} />
-                <BlogPostContent country={this.props.country} childImage={this.props.parentImage} childShowImage={this.props.parentShowImage} />
+                <BlogPostContent country={this.props.parentCountry} childImage={this.props.parentImage} childShowImage={this.props.parentShowImage} />
                 <div className="card-footer">
                     <span className={this.props.makeBig ? "display-1" : "display-4"}>Published on : {today.getDate() + "/" + (today.getMonth() + 1) + "/" + today.getFullYear()} </span>
                 </div>

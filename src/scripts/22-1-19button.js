@@ -5,14 +5,12 @@ export class ButtonTraining extends React.Component {
         super(props);
         this.state = { isPSeen: false, counter: 0 };
     }
-
     clickEvent(event) {
         this.setState({ isPSeen: true, counter: this.state.counter + 1 });
         setTimeout(() => {
             this.setState({ isPSeen: false });
         }, 3000)
     }
-
     render() {
         return (
             <div>

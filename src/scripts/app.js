@@ -1,51 +1,71 @@
-import '../styles/main.scss';
+import '../styles/main.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import { InstaBox } from './instabox';
 // import { NavBar } from './navbar';
 // import { BlogPost } from './blogs';
 // import { PlayerInfo } from './rider';
+// import { ShowHide } from './hidaParapraphUserCounter';
 // import { ButtonTraining } from './22-1-19button';
 // import { Sayhallo } from './22-1-19welcomeTask';
 // import { Warmup } from './23-1-19theory';
 // import { Sayhallorecompose} from './23-1-19task';
-import { PhotoGallery } from './23-1-19photoGallery';
-// import { ToDoList } from './28-1-19toDoList';
+// import { PhotoGallery } from './23-1-19photoGallery';
+import { ToDoTask } from './28-1-19toDoList';
+// import { FormInput, ShowUserInfo } from './07-02-19PassingData';
 
 class App extends React.Component {
-
     render() {
         return (
-            <PhotoGallery />
+            <ToDoTask />
         )
     }
-    // constructor(props) {
-    //     super(props);
-    //     this.state = { isParagraphSeen: false };
-    //     // this.state = { counter: 0 }
-    // }
 
 
-    // handleClick(event) {
-    //     this.setState({ isParagraphSeen: !this.state.isParagraphSeen });
-    //     // this.setState({ counter: this.state.counter + 1 });
-    //     // console.log("you clicked the button !");
-    //     // this.refs.myButton.innerText ="button clicked !";
-    //     // this.refs.miladParagraph.innerText="Milad answered this question!"
-    // }
+
 
     // render() {
     //     return (
     //         <React.Fragment>
-    //             {/* <button className="btn btn-lg btn-primery" onClick={this.handleClick.bind(this)} ref="myButton">Add a subscriber</button> */}
-    //             <button className="btn btn-lg btn-primary" onClick={this.handleClick.bind(this)}>
-    //                 {this.state.isParagraphSeen ? 'Hide Paragraph' : 'Show Paragraph'}
-    //             </button>
-    //             {this.state.isParagraphSeen && <p className="lead">Now you See Me!</p>}
-    //             {/* {this.state.counter > 0 && <p className="lead" ref="miladParagraph">Officialy we have now {this.state.counter} subscribers</p>} */}
+    //             <FormInput />
+    //             <ShowUserInfo name={} />
     //         </React.Fragment>
     //     )
     // }
+
+
+
+
+    // render() {
+    //     return (
+    //         <PhotoGallery />
+    //     )
+    // }
+
+    // render() {
+    //     return (
+    //         <Warmup />
+    //     )
+    // }
+    // render() {
+    //     return (
+    //         <Sayhallo />
+    //     )
+    // }
+
+    // render() {
+    //     return (
+    //         <ButtonTraining />
+    //     )
+    // }
+    // render() {
+    //     return (
+    //         <ShowHide />
+    //     )
+    // }
+
+
+    // //rider
 
     // render() {
 
@@ -58,19 +78,21 @@ class App extends React.Component {
     //     );
     // }
 
-
+    // //blogpost
     // render() {
     //     return (
     //         <React.Fragment>
-    //             <BlogPost makeBig={true} country="Germany" parentAuthor="Kostas Diakogiannis" parentImage="./images/Germany.jpg" parentShowImage={true} />
-    //             <BlogPost makeBig={true} country="Japan" parentAuthor="Ali Pudina" parentImage="./images/Japan.jpg" parentShowImage={true} />
-    //             <BlogPost makeBig={true} country="Italy" parentAuthor="Mohamad Lahham" parentImage="./images/italy.jpg" parentShowImage={true} />
+    //             <BlogPost makeBig={true} parentCountry="Germany" parentAuthor="Kostas Diakogiannis" parentImage="./images/Germany.jpg" parentShowImage={true} />
+    //             <BlogPost makeBig={true} parentCountry="Japan" parentAuthor="Ali Pudina" parentImage="./images/Japan.jpg" parentShowImage={true} />
+    //             <BlogPost makeBig={true} parentCountry="Italy" parentAuthor="Mohamad Lahham" parentImage="./images/italy.jpg" parentShowImage={true} />
     //         </React.Fragment>
     //     );
     // }
+
+    //     //instaBoxFull
     // render() {
     //     const data = [
-    //         { title: 'Was their but coudnt dee it', source: './images/finland.jpg', description: 'bla', country: 'Finland' },
+    //         { title: 'Was there but coudnt dee it', source: './images/finland.jpg', description: 'bla', country: 'Finland' },
     //         { title: 'Cheap Sushi and Tamiya stuff', source: './images/Japan.jpg', description: 'bla bla', country: 'Japan' },
     //         { title: 'Long time ago', source: './images/italy.jpg', description: 'bla bla bla', country: 'Italy' },
     //         { title: 'Beers!', source: './images/Germany.jpg', description: 'bla bla bla bla', country: 'Germany' }
@@ -79,12 +101,13 @@ class App extends React.Component {
     //     return (
     //         <React.Fragment>
     //             <NavBar />
-    //             {data.map((dataPoint, index) => <InstaBox
-    //                 key={index}
-    //                 identifier={dataPoint.country}
-    //                 title={dataPoint.title}
-    //                 imageSource={dataPoint.source}
-    //                 description={dataPoint.description} />
+    //             {data.map((dataPoint, index) =>
+    //                 <InstaBox
+    //                     key={index}
+    //                     identifier={dataPoint.country}
+    //                     title={dataPoint.title}
+    //                     imageSource={dataPoint.source}
+    //                     description={dataPoint.description} />
 
     //             )}
     //         </React.Fragment>
