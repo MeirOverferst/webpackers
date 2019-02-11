@@ -1,16 +1,20 @@
 
-.fade-enter{
-    opacity: 0;
+.bouncer-enter{
+    /* opacity: 0; */
+    animation:0.5s bounceIn ease-in;
 }
 
-.fade-enter-active{
-    opacity: 1;
-    transition: all 2s ease-in;
+.bouncer-enter-active{
+    /* opacity: 1;
+    transition: all 2s ease-in; */
+    
 }
-.fade-exit{
-    opacity:1;
+.bouncer-exit{
+    /* opacity:1; */
+    animation:0.5s bounceOut ease-out;
 }
-.fade-exit-active{
-opacity: 0;
-transition: all 2s ease-out;
+.bouncer-exit-active{
+/* opacity: 0;
+transition: all 2s ease-out; */
+
 }

@@ -41,6 +41,7 @@ export class ToDoTask extends React.Component {
 
     setDone(event) {
         event.target.parentElement.classList.toggle('strike');
+        ;
     }
 
     deleteTask(event) {
@@ -54,7 +55,6 @@ export class ToDoTask extends React.Component {
     removeAlert(event) {
         this.setState({ isDuplicate: false, showErrorLength: false });
     }
-
     render() {
 
         return (
@@ -78,11 +78,11 @@ export class ToDoTask extends React.Component {
                         {this.state.tasks.map((taskDescription, index) => {
                             return (
 
-                                <CSSTransition key={index} timeout={2000} classNames="fade">
+                                <CSSTransition key={index} timeout={500} classNames="bouncer">
                                     <React.Fragment>
                                         {taskDescription && <li text={taskDescription} className="list-group-item" >{taskDescription}
                                             <button onClick={this.setDone} className="btn btn-warning float-right">Set to Done</button>
-                                            <button onClick={this.deleteTask} className="btn btn-danger float-right mx-3">Delete task</button>
+                                            <button onClick={this.deleteTask} className="btn btn-danger float-right">Delete task</button>
                                         </li>}
                                     </React.Fragment>
                                 </CSSTransition>
